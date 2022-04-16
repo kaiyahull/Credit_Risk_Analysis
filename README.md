@@ -11,16 +11,16 @@ RandomOverSampler
 * Precision:
 * Recall:
 
-<img src="randomoversampler_accuracy.png">
-<img src="randomoversampler_classification.png">
+<img src="images/randomoversampler_accuracy.png">
+<img src="images/randomoversampler_classification.png">
 
 SMOTE
 * Accuracy: 0.66
 * Precision:
 * Recall:
 
-<img src="SMOTE_accuracy.png">
-<img src="SMOTE_classification.png">
+<img src="images/SMOTE_accuracy.png">
+<img src="images/SMOTE_classification.png">
 
 <ins>Undersampling</in>
 ClusterCentroids
@@ -28,8 +28,8 @@ ClusterCentroids
 * Precision:
 * Recall:
 
-<img src="cc_accuracy.png">
-<img src="cc_classification.png">
+<img src="images/cc_accuracy.png">
+<img src="images/cc_classification.png">
 
 <ins>Combination</ins>
 SMOTEENN
@@ -37,8 +37,8 @@ SMOTEENN
 * Precision:
 * Recall: 
 
-<img src="SMOTEENN_accuracy.png">
-<img src="SMOTEENN_classification.png">
+<img src="images/SMOTEENN_accuracy.png">
+<img src="images/SMOTEENN_classification.png">
 
 <ins>Learning Models</ins>
 BalancedRandomForestClassifier
@@ -46,8 +46,8 @@ BalancedRandomForestClassifier
 * Precision: 
 * Recall:
 
-<img src="forest_accuracy.png">
-<img src="forest_classification.png">
+<img src="images/forest_accuracy.png">
+<img src="images/forest_classification.png">
 
 
 EasyEnsembleClassifier
@@ -56,8 +56,8 @@ EasyEnsembleClassifier
 * Recall:
 
 
-<img src="adaboost_accuracy.png">
-<img src="adaboost_classification.png">
+<img src="images/adaboost_accuracy.png">
+<img src="images/adaboost_classification.png">
 
 
 
