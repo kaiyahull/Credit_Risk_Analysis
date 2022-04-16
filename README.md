@@ -89,14 +89,12 @@ On the other hand, high recall is preferred when determining high-risk customers
 <img src="images/high_risk_pred.png">
 
 
-All of the models had low precision for detecting high-risk loans, ranging from 0.01 to 0.09. Conversely, all models had high precision scores of 1.00 for detecting low-risk loans. Recall scores for detecting high-risk loans ranged from 0.62 - 0.92. `SMOTE` had the lowest recall score for high-risk loans and the `EasyEnsembleClassifier` had the highest score. There is a larger range in recall scores for low-risk loans from 0.40 for `ClusterCentroids` to 0.94 for `EasyEnsembleClassifier`. 
+All of the models had low precision for detecting high-risk loans, ranging from 0.01 to 0.09. This means that all models had a large number of false positives (low-risk loans predicted to be high-risk). Conversely, all models had high precision scores of 1.00 for detecting low-risk loans. Recall scores for detecting high-risk loans ranged from 0.62 - 0.92. `SMOTE` had the lowest recall score for high-risk loans and the `EasyEnsembleClassifier` had the highest score. There is a larger range in recall scores for low-risk loans from 0.40 for `ClusterCentroids` to 0.94 for `EasyEnsembleClassifier`. 
 
  
 Based on the results of this analysis, the best machine learning model of the six tested for detecting high-risk credit loans is the `EasyEnsembleClassifer`. This model performed the best for detecting high-risk loans.
 
-Since all of the six models tested received a precision score of 1.00 for detecting low-risk loans, there is no recommendation for the best model. 
-
-
+Since all of the six models tested received a precision score of 1.00 for detecting low-risk loans, a strong recommendation for the best model for predicting low-risk loans isn't possible. A precision score of 1.0 means that all customers that the model predicted to be low-risk were actually low-risk. When evaluating precision score alone, it looks like all models performed equally perfectly. However, precision alone does not indicate how many low-risk loans were predicted to be high-risk. To give more insight into the model performance, we can look into the accuracy scores of the models. The `ClusterCentroids` model had the lowest accuracy score of 0.54. The model with the highest accuracy score is the `EasyEnsembleClassifier` with a score of 0.93.
 
 
 
