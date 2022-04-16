@@ -48,7 +48,8 @@ SMOTEENN
 <img src="images/SMOTEENN_accuracy.png">
 <img src="images/SMOTEENN_classification.png">
 
-<ins>Learning Models</ins>
+<ins>Ensemble Learning Models</ins>
+
 BalancedRandomForestClassifier
 * Accuracy: 0.79
 * Precision (High-Risk Loans): 0.03
@@ -75,3 +76,43 @@ EasyEnsembleClassifier
 
 
 ## Summary
+
+When predicting low-risk credit card customers, precision is most important to the lender. However, when predicting high-risk credit card customers, recall is most important. 
+
+Precision measures how likely the customers predicted as being low-risk will actually be low-risk. High precision means that the low-risk customers the ML model selects will be low-risk. The tradeoff is that some low-risk customers could be predicted to be high-risk incorrectly. The lender may not offer credit cards or certain rates to some low-risk customers. But with high precision, the lender is less likely to offer a credit card loan to high-risk customers. 
+
+<img src="images/low_risk_pred.png">
+
+On the other hand, high recall is preferred when determining high-risk customers. High recall measures how likely the ML model is to select all high-risk customers from the pool of customers. With high recall, the model will select all high-risk customers from the model. The tradeoff to this is that the model may also select some low-risk customers as being high-risk. Again, some low-risk customers will be miscategorized as high-risk but the lender limits possibility of offering credit card loans to high-risk customers. 
+
+
+<img src="images/high_risk_pred.png">
+
+
+All of the models had low precision for detecting high-risk loans, ranging from 0.01 to 0.09. Conversely, all models had high precision scores of 1.00 for detecting low-risk loans. Recall scores for detecting high-risk loans ranged from 0.62 - 0.92. `SMOTE` had the lowest recall score for high-risk loans and the `EasyEnsembleClassifier` had the highest score. There is a larger range in recall scores for low-risk loans from 0.40 for `ClusterCentroids` to 0.94 for `EasyEnsembleClassifier`. 
+
+ 
+Based on the results of this analysis, the best machine learning model of the six tested for detecting high-risk credit loans is the `EasyEnsembleClassifer`. This model performed the best for detecting high-risk loans.
+
+Since all of the six models tested received a precision score of 1.00 for detecting low-risk loans, there is no recommendation for the best model. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
