@@ -27,6 +27,7 @@ SMOTE
 <img src="images/SMOTE_classification.png">
 
 <ins>Undersampling</in>
+
 ClusterCentroids
 * Accuracy: 0.54
 * Precision (High-Risk Loans): 0.01
@@ -38,6 +39,7 @@ ClusterCentroids
 <img src="images/cc_classification.png">
 
 <ins>Combination</ins>
+
 SMOTEENN
 * Accuracy: 0.65
 * Precision (High-Risk Loans): 0.01
@@ -79,11 +81,11 @@ EasyEnsembleClassifier
 
 When predicting low-risk credit card customers, precision is most important to the lender. However, when predicting high-risk credit card customers, recall is most important. 
 
-Precision measures how likely the customers predicted as being low-risk will actually be low-risk. High precision means that the low-risk customers the ML model selects will be low-risk. The tradeoff is that some low-risk customers could be predicted to be high-risk incorrectly. The lender may not offer credit cards or certain rates to some low-risk customers. But with high precision, the lender is less likely to offer a credit card loan to high-risk customers. 
+Precision measures how reliable a positive classification is. High precision means that the customers the model predicts to be low-risk will actually be low-risk. The tradeoff is that some low-risk customers could be predicted to be high-risk incorrectly. The lender may not offer credit cards or certain rates to some low-risk customers. But with high precision, the lender is less likely to offer a credit card loan to high-risk customers. 
 
 <img src="images/low_risk_pred.png">
 
-On the other hand, high recall is preferred when determining high-risk customers. High recall measures how likely the ML model is to select all high-risk customers from the pool of customers. With high recall, the model will select all high-risk customers from the model. The tradeoff to this is that the model may also select some low-risk customers as being high-risk. Again, some low-risk customers will be miscategorized as high-risk but the lender limits possibility of offering credit card loans to high-risk customers. 
+On the other hand, high recall is preferred when determining high-risk customers. Recall is the measure of the model's ability to find all targeted cases in the dataset. With high recall, the model will select all high-risk customers from the model. The tradeoff to this is that the model may also select some low-risk customers as being high-risk. Again, some low-risk customers will be miscategorized as high-risk but the lender limits possibility of offering credit card loans to high-risk customers. 
 
 
 <img src="images/high_risk_pred.png">
